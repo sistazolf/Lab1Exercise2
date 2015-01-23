@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-  
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         TextView tv = (TextView) findViewById(R.id.tvOutput);
 
         if (selTo == R.id.rbToF) {
-            double CtoF = ((val * 9/5) + 32);
+            double CtoF = ((val * (9.0/5.0)) + 32);
             tv.setText(Double.toString(CtoF));
         }else if (selTo == R.id.rbToK) {
             double CtoK = val + 273.15;
